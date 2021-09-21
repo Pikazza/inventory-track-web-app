@@ -1,0 +1,59 @@
+<div class="my-profile my-4">
+    <div class="d-flex">
+        <h4>MY PROFILE</h4>
+        <div class="ms-auto ">
+            <a routerLink="/customers/{{ (customer||{}).CustomerId }}/edit" type="button" class="btn edit-profile-btn">Edit Profile</a>
+            
+                
+        </div>
+    </div>
+    <div class="row mt-4 ">
+        <div class="col-md-12 col-lg-1 text-center">
+              <img src="assets/img/profile.jpg">
+        </div>
+        <div class="col-md-12 col-lg-3 text-center mt-2 mt-md-0">
+            <div class="dotted-right">
+                <h4 class="me-2">{{(customer||{}).CustomerName}}</h4>
+                  <p class="mb-0 me-2"><b>{{(customer||{}).Address}}</b></p>
+                  <p *ngIf="customer!.Role == 'customer'" class="mt-1 mb-2 me-2 mb-lg-0 ">Customer Id : {{(customer||{}).CustomerId}}</p>
+                  <p *ngIf="customer!.Role == 'admin'" class="mt-1 mb-2 me-2 mb-lg-0 ">Seller Id : {{(customer||{}).seller_id}}</p>
+                  <!-- <p class="mt-1 mb-2 me-2 mb-lg-0 ">Status : {{(customer||{}).Status}}</p> -->
+                  
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mt-3 mt-lg-0">
+            <ul class="mb-0">
+                <li *ngIf="customer!.CustomerMobile">
+                    <span class="title">Phone :</span>
+                    <span class="text">{{(customer||{}).CustomerMobile}}</span>
+                </li>
+                <li class="mt-2" *ngIf="customer!.CustomerMobile">
+                    <span class="title">Email :</span>
+                    <span class="text">{{(customer||{}).Email}}</span>
+                </li>
+                <li class="mt-2">
+                    <span class="title">UserName :</span>
+                    <span class="text">{{(customer||{}).UserName}}</span>
+                </li>
+                
+            </ul>		
+        </div>
+        <div class="col-lg-4 col-md-6  mt-md-3 mt-lg-0">
+            <ul>
+                <!-- <li >
+                    <span class="title">Password :</span>
+                    <span class="text">pikazza</span>
+                </li> -->
+                <li class="mt-2">
+                    <span class="title">Status :</span>
+                    <span class="text">{{(customer||{}).Status}}</span>
+                </li>
+                <!-- <li class="mt-2">
+                    <span class="title">Seller Id :</span>
+                    <span class="text">{{(customer||{}).seller_id}}</span>
+                </li> -->
+                
+            </ul>       
+        </div>
+    </div>
+</div>

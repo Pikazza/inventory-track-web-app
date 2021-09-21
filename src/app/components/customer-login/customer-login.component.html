@@ -1,0 +1,37 @@
+<section>
+    <div class="container" >
+        <div class="row">
+            <div class="col-md-4 mx-auto  ">
+                <div class="login-box">
+                    <div class="text-center">
+                        <img src="assets/img/logo.png " class="img-fluid">
+                    </div>
+                    <h4 class="text-center mt-3">LOGIN</h4>
+                    <p class="text-center text-secondary mb-4">Access to our dashboard</p>
+                    <p class="text-center text-error mb-4">{{errorMessage}}</p>
+                    <form  *ngIf="!isLoggedIn" name="form" (ngSubmit)="onSubmit()" #f="ngForm" novalidate >
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1">
+                                <i class="icon-user-name"></i>
+                            </span>
+                            <input type="text" class="form-control" placeholder="User Name"  name="username"  [(ngModel)]="form.username" required #username="ngModel" aria-label="Username" aria-describedby="basic-addon1">
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon2">
+                                <i class="icon-padlock"></i>
+                            </span>
+                            <input type="password" class="form-control" placeholder="Password" name="password"
+                            [(ngModel)]="form.password" required minlength="6" #password="ngModel" aria-label="password" aria-describedby="basic-addon2">
+                        </div>
+                        <div class="mt-4">
+                            <!-- <a href="dashboard.html" type="submit" class="btn login-btn">Login</a> -->
+                            <button class="btn btn-primary btn-block">
+                                Login
+                              </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

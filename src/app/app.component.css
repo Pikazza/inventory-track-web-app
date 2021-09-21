@@ -1,0 +1,283 @@
+/*breadcrum start*/
+.breadcrumb
+{
+	background: #fff;
+	box-shadow: 0 0 30px 0 rgba(82,63,105,.05);
+	border-radius: .45rem;
+	font-size: 1.2rem;
+
+}
+table th
+{
+	text-transform: uppercase;
+}
+/*breadcrum end*/
+
+/*user list css start*/
+
+.user-list
+{
+	background: #fff;
+	border-radius: .45rem;
+	padding: 1.5rem 1rem;
+}
+.add-user-btn
+{
+	background: #2858a0;
+	border-radius: 2px;
+	color: #fff;
+	font-weight: bold;
+}
+.user-list__table
+{
+color: #fff;
+background-color: #2858a0!important;
+}
+.dataTables_length
+{
+margin-bottom: 15px!important;
+}
+.dataTables_paginate
+{
+margin-top: 15px!important;
+}
+.page-item.active .page-link
+{
+	background: #2858a0!important;
+	border-color:#2858a0!important;
+}
+div.dataTables_wrapper div.dataTables_info
+{
+	padding-top: 1.2rem!important;
+}
+.user-list .dropdown-menu 
+{
+	font-size: 12px;
+}
+.btn-save
+{
+	background: #2858a0;
+	border-radius: 2px;
+	color: #fff;
+	font-weight: bold;
+}
+.profile-img
+{
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	object-position: center;
+	object-fit: cover;
+}
+.user-status {
+    position: absolute;
+    bottom: 6px;
+	right: 6px;
+    border: .125rem solid #fff;
+    width: 12px;
+    height: 12px;
+    line-height: 1;
+    border-radius: 50%;
+    background-color: #00c9a7;
+}
+.edit-form input
+{
+	border-radius: unset;
+}
+.edit-form select
+{
+	border-radius: unset;
+}
+
+/*user list css end*/
+
+/*add user css start*/
+.add-user
+{
+	background: #fff;
+	border-radius: .45rem;
+	padding: 1.5rem 1rem;
+}
+.add-user input
+{
+border-radius: unset;
+}
+.add-user select
+{
+border-radius: unset;
+}
+.add-user label
+{
+	padding-bottom: 3px;
+}
+.btn-submit
+{
+	background: #2858a0;
+	border-radius: 2px;
+	color: #fff;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.form-control:focus, .dataTable-input:focus
+{
+	box-shadow: unset!important;
+}
+.form-select:focus, .dataTable-selector:focus
+{
+	box-shadow: unset!important;
+}
+.btn-check:focus + .btn, .btn:focus
+{
+	box-shadow: unset!important;
+}
+.breadcrumb-item a
+{
+color: #2858a0;
+}
+.breadcrumb{
+	font-size: 1rem;
+
+}
+/*add user css end*/
+
+/*login css start*/
+.login-box
+{
+border: 1px solid #e7e7e7;
+background-color: #fff;
+box-shadow: 0 6px 15px rgba(36,37,38,.08);
+border-radius: 5px;
+margin-top: 13rem;
+padding: 35px;
+}
+.login-box input
+{
+	border-radius: unset;
+}
+.input-group-text
+{
+	border-radius: unset!important;
+}
+.login-btn
+{
+	background-color: #2858a0;
+	color: #fff;
+	width: 100%;
+	border-radius: unset!important;
+	font-size: 1.2rem!important;
+}
+/*login css end*/
+
+/*edit css start*/
+.edit-user
+{
+	background: #fff;
+	border-radius: .45rem;
+	padding: 1.5rem 1rem;
+}
+.edit-user label
+{
+	padding-bottom: 3px;
+}
+/*edit css end*/
+
+/*my profile start*/
+.my-profile
+{
+	background: #fff;
+	border-radius: .45rem;
+	padding: 1.5rem 1rem;
+}
+.my-profile img
+{
+	width: 90px;
+	height: 90px;
+	border-radius: 50%;
+	object-position: center;
+	object-fit: cover;
+}
+.dotted-right
+{
+	border-right: 2px dashed #ccc;
+}
+@media (max-width: 768px) and (min-width: 319px)
+{
+	.dotted-right
+{
+	border-right: unset;
+	border-bottom: 2px dashed #ccc;
+}
+}
+
+.my-profile ul
+{
+	list-style-type: none;
+	padding: 0px;
+	font-size: 0.95rem;
+}
+.my-profile li .title
+{
+	color: #4f4f4f;
+	float: left;
+	font-weight: 500;
+	width: 50%;
+	font-weight: bold;
+}
+.my-profile li .text {
+    color: #8e8e8e;
+    display: block;
+    overflow: hidden;
+}
+.edit-profile-btn
+{
+	background: #2858a0;
+	color: #fff;
+}
+.my-profile input
+{
+	border-radius: unset;
+}
+.my-profile select
+{
+	border-radius: unset;
+}
+.my-profile label
+{
+	padding-bottom: 3px;
+}
+/*my profile end*/
+
+/*product list start*/
+.add-product
+{
+	background: #fff;
+	border-radius: .45rem;
+	padding: 1.5rem 1rem;
+}
+.add-product input
+{
+	border-radius: unset;
+}
+.add-product select
+{
+	border-radius: unset;
+}
+.product-filter input
+{
+
+border-radius: unset;
+}
+.product-filter button
+{
+	border-radius: unset;
+	background-color: #2858a0;
+	color: #fff;
+	width: 100%;
+}
+.edit-product
+{
+	background: #fff;
+	border-radius: .45rem;
+	padding: 1.5rem 1rem;
+}
+/*product list end*/

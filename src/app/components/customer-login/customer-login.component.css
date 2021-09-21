@@ -1,0 +1,13 @@
+.login-box{
+    margin-left: -10rem;
+    margin-top: 2rem;
+    margin-right: 4rem;
+}
+
+.text-error {
+    color: red;
+}
+
+.text-success {
+    color: green;
+}

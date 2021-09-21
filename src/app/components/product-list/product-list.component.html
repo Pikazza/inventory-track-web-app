@@ -1,0 +1,53 @@
+<div class="user-list my-4">
+    <div class="d-flex">
+        <h4>Products</h4>
+        <!-- <div class="ms-auto">
+            <a href="add-user.html" class="btn add-user-btn" type="button"> + Add User </a> 
+        </div> -->
+    </div>
+    <div class="mt-4 table-responsive">
+        <!-- user table start -->
+        <table id="example" class="table table-striped" style="width:100%">
+            <thead class="pt-4">
+                <tr>
+                    <th class="user-list__table">Product Id</th>
+                    <th class="user-list__table">Product Desc</th>
+                    <th class="user-list__table">Category</th>
+                    <th class="user-list__table">Bill No</th>
+                    <th class="user-list__table">Bill Date</th>
+                    <th class="user-list__table">Bill Price</th>
+                    <th class="user-list__table">Quantity</th>
+                    <th class="user-list__table">Netamount</th>
+
+                    <th class="user-list__table">Seller</th>
+
+
+                    <!-- <th class="user-list__table text-center">Action</th> -->
+                </tr>
+            </thead>
+            <tbody class="table-row" data-href="edit-user.html">
+                <tr *ngFor="let product of products; let i = index"
+                [class.active]="i == currentIndex"
+                (click)="setActiveProduct(product, i)">
+                <td>{{ product.productid }}</td>
+                <td>{{ product.description }}</td>
+                <td>{{ product.category }}</td>
+                <td>{{ product.Billno }}</td>
+                <td>{{ product.Billdate }}</td>
+                <td>{{ product.billprice }}</td>
+                <td>{{ product.qty }}</td>
+
+                <td>{{ product.Netamount }}</td>
+                <td>{{ product.seller }}</td>
+                <!-- <td>
+                   <p class="mb-0 text-success">{{ product.Status }}</p>
+                </td> -->
+                <!-- <td class="text-center"> 
+                    <a class="badge badge-warning" routerLink="/customers/{{ customer.CustomerId }}"><img src="assets/img/edit.svg" width="15px"></a>
+                </td>  -->
+              </tr>
+            </tbody>
+        </table>
+        <!-- user table end -->
+    </div>
+</div>

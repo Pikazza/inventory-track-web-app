@@ -1,0 +1,45 @@
+<div class="user-list my-4">
+    <div class="d-flex">
+        <h4>USERS</h4>
+        <div class="ms-auto">
+            <a href="add-user.html" class="btn add-user-btn" type="button"> + Add User </a> 
+        </div>
+    </div>
+    <div class="mt-4 table-responsive">
+        <!-- user table start -->
+        <table id="example" class="table table-striped" style="width:100%">
+            <thead class="pt-4">
+                <tr>
+                    <th class="user-list__table">Customer Id</th>
+                    <th class="user-list__table">Customer Name</th>
+                    <th class="user-list__table">Customer Mobile</th>
+                    <th class="user-list__table">Email</th>
+                    
+                    <th class="user-list__table">User Name</th>
+                    <th class="user-list__table">Password</th>
+                    <th class="user-list__table">Status</th>
+                    <th class="user-list__table text-center">Action</th>
+                </tr>
+            </thead>
+            <tbody class="table-row" data-href="edit-user.html">
+                <tr *ngFor="let customer of customers; let i = index"
+                [class.active]="i == currentIndex"
+                (click)="setActiveCustomer(customer, i)">
+                <td>{{ customer.CustomerId }}</td>
+                <td>{{ customer.CustomerName }}</td>
+                <td>{{ customer.CustomerMobile }}</td>
+                <td>{{ customer.Email }}</td>
+                <td>{{ customer.UserName }}</td>
+                <td>{{ customer.UserName }}</td>
+                <td>
+                   <p class="mb-0 text-success">{{ customer.Status }}</p>
+                </td>
+                <td class="text-center"> 
+                    <a class="badge badge-warning" routerLink="/customers/{{ customer.CustomerId }}/edit"><img src="assets/img/edit.svg" width="15px"></a>
+                </td> 
+              </tr>
+            </tbody>
+        </table>
+        <!-- user table end -->
+    </div>
+</div>
